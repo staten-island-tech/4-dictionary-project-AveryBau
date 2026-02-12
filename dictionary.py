@@ -1,13 +1,22 @@
-best_buy_items = {    
-    "name": "Samsung 55\" 4K UHD TV",
-    "price": 429.99,
-    "department": "Televisions",
-    "description": "55-inch Ultra HD Smart TV with HDR and built-in streaming apps."
-}
+pals = [
+{
+    "name": "Sophie",
+    "price": 6767.67,
+    "department": "history museum",
+    "description": "balls."
+},
+{
+    "name": "Sabrina",
+    "price": 333.00,
+    "department": "Yuri",
+    "description": "bark bark"
+},
+]
 
-for index, item in enumerate(best_buy_items):
-    print(index, ":", item["name"])
-          
+
+
+print(pals[0]["name"])
+
 
 
 """If you want just the name of the first item, you write:"""
@@ -23,4 +32,7 @@ for index, item in enumerate(best_buy_items):
 
 index: the position in the list (0, 1, 2, 3, …).
 item: the dictionary at that position. """
+
+
+
 
