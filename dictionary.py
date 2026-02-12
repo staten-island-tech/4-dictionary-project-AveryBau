@@ -14,8 +14,12 @@ pals = [
 ]
 
 
-
 print(pals[0]["name"])
+
+for index, item in enumerate(pals):
+    print(index, ":", item["name"])
+
+
 
 
 
