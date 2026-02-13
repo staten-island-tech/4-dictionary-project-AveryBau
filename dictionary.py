@@ -1,6 +1,6 @@
 grocery_store = [
 {
-    "name": "Apple",
+    "name": "Apples",
     "price": 3.50,
     "department": "Fruit",
     "description": "Keeps the doctors away"
@@ -24,12 +24,23 @@ grocery_store = [
     "description": "Good carbs"
 },
 {
-    "name": "Cookie",
+    "name": "Cookies",
     "price": 6.99,
     "department": "Sweet Treats",
     "description": "Yummy sugar"
 },
-
+{
+    "name": "Lettuce",
+    "price": 5.25,
+    "department": "Vegetables",
+    "description": "Tasteless Health"
+},
+{
+    "name": "Beef",
+    "price": 9.00,
+    "department": "Protein",
+    "description": "MEAT",
+},
 
 
 ]
