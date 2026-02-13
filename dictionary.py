@@ -1,22 +1,43 @@
-pals = [
+grocery_store = [
 {
-    "name": "Sophie",
-    "price": 6767.67,
-    "department": "history museum",
-    "description": "balls."
+    "name": "Apple",
+    "price": 3.50,
+    "department": "Fruit",
+    "description": "Keeps the doctors away"
 },
 {
-    "name": "Sabrina",
-    "price": 333.00,
-    "department": "Yuri",
-    "description": "bark bark"
+    "name": "Milk",
+    "price": 7.00,
+    "department": "Dairy",
+    "description": "Came from a cow"
 },
+{
+    "name": "Chips",
+    "price": 6.60,
+    "department": "Snack",
+    "description": "Crunchy and totally healthy"
+},
+{
+    "name": "Bread",
+    "price": 7.50,
+    "department": "Grains",
+    "description": "Good carbs"
+},
+{
+    "name": "Cookie",
+    "price": 6.99,
+    "department": "Sweet Treats",
+    "description": "Yummy sugar"
+},
+
+
+
 ]
 
 
-print(pals[0]["name"])
+print(grocery_store[0]["name"])
 
-for index, item in enumerate(pals):
+for index, item in enumerate(grocery_store):
     print(index, ":", item["name"])
 
 
