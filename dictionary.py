@@ -38,10 +38,9 @@ grocery_store = [
 {
     "name": "Beef",
     "price": 9.00,
-    "department": "Protein",
-    "description": "MEAT",
+    "department": "Meat",
+    "description": "PROTEIN",
 },
-
 
 ]
 
@@ -49,9 +48,21 @@ grocery_store = [
 print(grocery_store[0]["name"])
 
 for index, item in enumerate(grocery_store):
-    print(index, ":", item["name"])
+    print(index, ":", item["name", "price"])
 
+cart = []
+total = sum([])
+purchasing = ""
 
+while purchasing != "done":
+    purchasing = input("what will you like to buy? (say done to stop)")
+    cart.append(purchasing)
+    
+if item in cart:
+    total.append(cart)
+
+if purchasing == "done":
+    print("OK", cart, total)
 
 
 
