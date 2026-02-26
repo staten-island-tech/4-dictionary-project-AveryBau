@@ -50,25 +50,32 @@ print("WELCOME TO AVERY'S GROCERY STORE!!! PLS BUY SMTH IM BROKE")
 for index, item in enumerate(grocery_store):
     print(index, ":", item["name"], item["price"])
 
-""" cart = []
-total = sum(cart)
+cart = []
+total = 0
 purchase = ""
 
 found = False
 for items in grocery_store:
     if purchase == items["name"]:
         cart.append(items)
+        total += items["price"]
         done = input("What would you like to buy?")
         found = True
         break
+
 if not found:
     print("Your item is not available in store")
     done = input("Are you done with your purchase?")
     if done == "no":
         purchase = input("what would you like to buy?")
     
-if  done == "yes":
-    print(cart) """
+if done == "yes":
+    print("Someone's a lil' stingy...")
+    for items in cart:
+        print("-", item)
+    print("Total: $", total)
+
+
     
 
 
