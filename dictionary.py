@@ -45,24 +45,31 @@ grocery_store = [
 ]
 
 
-print(grocery_store[0]["name"])
+""" print(grocery_store[0]["name"]) """
 
 for index, item in enumerate(grocery_store):
-    print(index, ":", item["name", "price"])
+    print(index, ":", item["name"], item["price"])
 
 cart = []
-total = sum([])
-purchasing = ""
+total = sum(item["price"])
+purchase = ""
 
-while purchasing != "done":
-    purchasing = input("what will you like to buy? (say done to stop)")
-    cart.append(purchasing)
+found = False
+for items in grocery_store:
+    if purchase == items["name"]:
+        cart.append(items)
+        done = input("What would you like to buy?")
+        found = True
+        break
+if not found:
+    print("Your item is not available in store")
+    done = input("Are you done with your purchase?")
+    if done == "no":
+        purchase = input("what would you like to buy?")
     
-if item in cart:
-    total.append(cart)
-
-if purchasing == "done":
-    print("OK", cart, total)
+    if  done == "yes":
+        print(cart)
+    
 
 
 
