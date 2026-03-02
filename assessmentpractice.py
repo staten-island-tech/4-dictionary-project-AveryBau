@@ -22,18 +22,14 @@ def language (sentence):
     s=0
     S=0
     for i in range (len(sentence)):
-        if sentence[i] == "t":
+        if sentence[i] == "t" or sentence[i] == "T":
             t += 1
-        if sentence[i] == "T":
-            T += 1
-        if sentence[i] == "s":
+        if sentence[i] == "s" of sentence[i] == "S":
             s =+ 1
-        if sentence[i] == "S":
-            S =+ 1
-    print(s, S, t ,T)
-    if t+T > s+S:
+    print(s, t)
+    if t > s:
         print("probably English")
-    if s+S >= t+T:
+    if s >= t:
         print("probably French")
 language("The red cat sat on the mat. Why are you so sad cat? Don't ask that.") """
 
@@ -42,6 +38,7 @@ def honi(word):
     O = 0
     N = 0
     I = 0
+    HONI = 0
     for i in range (len(word)):
         if word[i] == "H":
             H += 1
@@ -51,5 +48,8 @@ def honi(word):
             N += 1
         if word[i] == "I":
             I += 1
+        if H+O+N+I == "HONI":
+            HONI += 1
     print(H, O, N, I)
+    honi("MAGNUS")
 
