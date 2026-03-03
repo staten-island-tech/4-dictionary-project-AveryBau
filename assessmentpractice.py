@@ -39,17 +39,24 @@ def honi(word):
     O = 0
     N = 0
     I = 0
+    current = "H"
     HONI = 0
     for i in range (len(word)):
-        if word[i] == "H":
+        if word[i] == current:
             H += 1
-        if word[i] == "O":
+        if word[i] == current:
             O += 1
-        if word[i] == "N":
+        if word[i] == current:
             N += 1
-        if word[i] == "I":
+        if word[i] == current:
             I += 1
         if H+O+N+I == 4:
             HONI += 1
+            H = 0
+            O = 0
+            N = 0
+            I = 0
+            current = "H"
+            HONI == 0
     print(H, O, N, I, HONI)
 honi("PROHODNIHODNIK")
