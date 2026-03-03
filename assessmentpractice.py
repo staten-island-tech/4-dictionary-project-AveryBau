@@ -52,4 +52,4 @@ def honi(word):
         if H+O+N+I == 4:
             HONI += 1
     print(H, O, N, I, HONI)
-honi("HHHHOOOONNNNIIII")
+honi("PROHODNIHODNIK")
