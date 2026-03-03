@@ -15,8 +15,8 @@ occupied(5, "C.C.C", "C..CC") """
 result = add(5,6)
 print(result)"""
 
-""" 
-def language (sentence):
+ 
+""" def language (sentence):
     t=0
     T=0
     s=0
@@ -24,7 +24,7 @@ def language (sentence):
     for i in range (len(sentence)):
         if sentence[i] == "t" or sentence[i] == "T":
             t += 1
-        if sentence[i] == "s" of sentence[i] == "S":
+        if sentence[i] == "s" or sentence[i] == "S":
             s =+ 1
     print(s, t)
     if t > s:
@@ -32,6 +32,7 @@ def language (sentence):
     if s >= t:
         print("probably French")
 language("The red cat sat on the mat. Why are you so sad cat? Don't ask that.") """
+
 
 def honi(word):
     H = 0
@@ -48,8 +49,7 @@ def honi(word):
             N += 1
         if word[i] == "I":
             I += 1
-        if H+O+N+I == "HONI":
+        if H+O+N+I == 4:
             HONI += 1
-    print(H, O, N, I)
-    honi("MAGNUS")
-
+    print(H, O, N, I, HONI)
+honi("HHHHOOOONNNNIIII")
