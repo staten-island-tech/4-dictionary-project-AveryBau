@@ -34,7 +34,7 @@ print(result)"""
 language("The red cat sat on the mat. Why are you so sad cat? Don't ask that.") """
 
 
-def honi(word):
+""" def honi(word):
     H = 0
     O = 0
     N = 0
@@ -57,6 +57,30 @@ def honi(word):
             N = 0
             I = 0
             current = "H"
+        else:
             HONI == 0
-    print(H, O, N, I, HONI)
-honi("PROHODNIHODNIK")
+    print(HONI)
+honi("MAGNUS")
+honi("HHHHOOOONNNNIIII")
+honi("PROHODNIHODNIK") """
+
+
+def magnus(word):
+    count = 0
+    state = 0  #tracks letter looing for
+    
+
+    for char in word: 
+        if state == 0 and char.upper() == "H":
+            state = 1
+        elif state == 1 and char.upper() == "O":
+            state = 2
+        elif state == 2 and char.upper() == "N":
+            state = 3
+        elif state == 3 and char.upper() == "I":
+            state = 0
+            count += 1
+        print(count)
+magnus("HHHHOOOONNNNIIII")
+magnus("HHOONNUUIIHHOONNUUII")
+    
