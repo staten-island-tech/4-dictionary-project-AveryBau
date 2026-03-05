@@ -62,7 +62,6 @@ for items in grocery_store:
         done = input("What would you like to buy?")
         found = True
         break
-
 if not found:
     print("Your item is not available in store")
     done = input("Are you done with your purchase?")

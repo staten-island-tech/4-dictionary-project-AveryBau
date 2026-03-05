@@ -65,10 +65,9 @@ honi("HHHHOOOONNNNIIII")
 honi("PROHODNIHODNIK") """
 
 
-def magnus(word):
+""" def magnus(word):
     count = 0
-    state = 0 
-    
+    state = 0
 
     for char in word: 
         if state == 0 and char.upper() == "H":
@@ -80,7 +79,21 @@ def magnus(word):
         elif state == 3 and char.upper() == "I":
             state = 0
             count += 1
-        print(count)
+    print(count)
 magnus("HHHHOOOONNNNIIII")
-magnus("HHOONNUUIIHHOONNUUII")
+magnus("MAGNUS")
+magnus("PROHODNIHODNIK") """
+
+
+def multiplechoice(number, answers, correct):
+    right = 0
+    for i in range(len(answers)):
+        if answers[i] == correct[i]:
+            right += 1
+    print(right)
+multiplechoice(3, "AABC", "AACD")
+
+
+
+            
     
