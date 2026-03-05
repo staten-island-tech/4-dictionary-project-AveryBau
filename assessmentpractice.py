@@ -67,7 +67,7 @@ honi("PROHODNIHODNIK") """
 
 def magnus(word):
     count = 0
-    state = 0  #tracks letter looing for
+    state = 0 
     
 
     for char in word: 
