@@ -85,13 +85,54 @@ magnus("MAGNUS")
 magnus("PROHODNIHODNIK") """
 
 
-def multiplechoice(number, answers, correct):
+""" def multiplechoice(number, answers, correct):
     right = 0
     for i in range(len(answers)):
         if answers[i] == correct[i]:
             right += 1
     print(right)
-multiplechoice(3, "AABC", "AACD")
+multiplechoice(3, "AAB", "AAC") """
+
+
+""" def uncrackable(password):
+    U = 0
+    L = 0
+    D = 0
+    for i in range(len(password)):
+        if password[i] == "upper":
+            U += 1
+        elif password[i] == "lower":
+            L += 1
+        elif password[i] == "digit":
+            D += 1
+    if U >= 3 or L >= 2 or D >= 1:
+        print("Valid")
+    else: 
+        print("Invalid")
+    if password <= 12 or password >= 8:
+        print("Valid")
+    else:
+        print("Invalid")
+uncrackable("PassW0rd") """
+
+
+def Tarifa(megabits, number_months, usage):
+    value = 0
+    for use in usage:
+        value += megabits
+        value -= use
+    print(value + megabits)
+Tarifa(10, 3, [4,6,2])
+
+""" def Tarifa(megabits, number_months, usage):
+    value = 0
+    for i in range(number_months):
+        value += megabits
+        value -= i
+    print(value + megabits)
+Tarifa(10, 3, [4,6,2]) """
+
+    
 
 
 
