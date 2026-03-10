@@ -51,26 +51,28 @@ for index, item in enumerate(grocery_store):
     print(index, ":", item["name"], item["price"])
 
 cart = []
-total = 0
+prices = []
 purchase = ""
+money = ""
 
-found = False
-for items in grocery_store:
-    if purchase == items["name"]:
-        cart.append(items)
-        total += items["price"]
-    done = input("What would you like to buy?")
-    found = True
-    done = input("Are you done with your purchase?")
-    if done == "no":
-        purchase = input("What would you like to buy?")
-        found = True
-    elif done == "yes":
-        print("Someone's a lil' stingy...")
-    
-for items in cart:
-    print("-", item)
-    print("Total: $", total)
+while purchase != "done":
+    purchase ==input("What would you like to buy?")
+    cart.append(purchase)
+    money = float(input("give cost (type '0' to finish:"))
+    prices.append(money)
+if 'done':
+    input("Are you done with your purchase?")
+elif 'yes':
+    input("Someone's a lil' stingy...but thank you I guess")
+elif 'no': 
+    input("GOOD whatchu want?")
+    cart.append(purchase)
+    money = float(input("Give cost"))
+    prices.append(money)
+print(cart, prices)
+total = sum(prices)
+
+print(cart, total)
 
     
     
