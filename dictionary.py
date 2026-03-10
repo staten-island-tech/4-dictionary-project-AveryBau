@@ -55,10 +55,10 @@ prices = []
 purchase = ""
 money = ""
 
-while purchase != "done":
-    purchase ==input("What would you like to buy?")
+while purchase != 'done':
+    purchase ==input("What would you like to buy? (say 'done' to stop)")
     cart.append(purchase)
-    money = float(input("give cost (type '0' to finish:"))
+    money = float(input("give cost (type '0' to finish)"))
     prices.append(money)
 if 'done':
     input("Are you done with your purchase?")
