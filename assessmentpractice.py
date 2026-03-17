@@ -116,14 +116,14 @@ multiplechoice(3, "AAB", "AAC") """
 uncrackable("PassW0rd") """
 
 
-def Tarifa(megabits, number_months, usage):
+""" def Tarifa(megabits, number_months, usage):
     value = 0
     for use in usage:
         value += megabits
         value -= use
     print(value + megabits)
 Tarifa(10, 3, [4,6,2])
-
+ """
 """ def Tarifa(megabits, number_months, usage):
     value = 0
     for i in range(number_months):
@@ -131,6 +131,44 @@ Tarifa(10, 3, [4,6,2])
         value -= i
     print(value + megabits)
 Tarifa(10, 3, [4,6,2]) """
+
+
+def slot(total, first, second, third):
+    times = 0
+    quarters = total
+    slotuno = 35 - first
+    slotdos = 100 - second
+    slottres = 10 - third
+    while quarters > 0:
+        quarters -= 1
+        slotuno -= 1
+        times += 1
+        if quarters == 0:
+            print(times)
+        quarters -= 1
+        slotdos -= 1
+        times += 1
+        if quarters == 0:
+            print(times)
+        quarters -= 1
+        slottres -= 1
+        times += 1
+        if quarters == 0:
+            print(times)
+        if slotuno == 0:
+            quarters += 30
+            slotuno += 35
+        if slotdos == 0:
+            quarters += 60
+            slotdos += 100 
+        if slottres == 0:
+            quarters += 9
+            slottres += 10
+    if quarters == 0:
+        print(times)
+slot(48, 3, 10, 4)
+slot(77, 4, 9, 3)
+
 
     
 
