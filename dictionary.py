@@ -9,7 +9,7 @@ grocery_store = [
     "name": "Milk",
     "price": 7.00,
     "department": "Dairy",
-    "description": "Came from a cow"
+    "description": "Cow juice"
 },
 {
     "name": "Chips",
@@ -52,19 +52,20 @@ for index, item in enumerate(grocery_store):
 
 cart = []
 prices = []
-purchase = ""
-money = ""
+purchase = " "
+money = " "
 
-while purchase != 'done':
+while purchase != "done":
     purchase ==input("What would you like to buy? (say 'done' to stop)")
     cart.append(purchase)
     money = float(input("give cost (type '0' to finish)"))
     prices.append(money)
-if 'done':
+    break
+if "done":
     input("Are you done with your purchase?")
-elif 'yes':
+elif "yes":
     input("Someone's a lil' stingy...but thank you I guess")
-elif 'no': 
+elif "no": 
     input("GOOD whatchu want?")
     cart.append(purchase)
     money = float(input("Give cost"))
