@@ -133,7 +133,7 @@ Tarifa(10, 3, [4,6,2])
 Tarifa(10, 3, [4,6,2]) """
 
 
-def slot(total, first, second, third):
+""" def slot(total, first, second, third):
     times = 0
     quarters = total
     slotuno = 35 - first
@@ -168,11 +168,5 @@ def slot(total, first, second, third):
         print(times)
 slot(48, 3, 10, 4)
 slot(77, 4, 9, 3)
+ """
 
-
-    
-
-
-
-            
-    
