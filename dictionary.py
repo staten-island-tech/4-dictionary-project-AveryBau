@@ -45,33 +45,40 @@ grocery_store = [
 ]
 
 
-print("WELCOME TO AVERY'S GROCERY STORE!!! PLS BUY SMTH IM BROKE")
+print("WELCOME TO AVERY'S GROCERY STORE!!!")
+
+""" def showItems(items):
+    for index, item in enumerate(items):
+            print(index, ":", item['name'])
+
+def thing():
+        showItems(grocery_store)
+        x = int(input("buy?"))
+        print(grocery_store[x])
+showItems(grocery_store)
+print(grocery_store[0])
+thing()
+ """
 
 for index, item in enumerate(grocery_store):
     print(index, ":", item["name"], item["price"])
 
 cart = []
 prices = []
-purchase = " "
-money = " "
+purchase = ""
 
-while purchase != "done":
-    purchase ==input("What would you like to buy? (say 'done' to stop)")
-    cart.append(purchase)
-    money = float(input("give cost (type '0' to finish)"))
-    prices.append(money)
-    break
-if "done":
+while purchase != 'done':
+    purchase == int(input("buy?"))
+    cart.append(grocery_store)
+    print(grocery_store[purchase])
+if 'done':
     input("Are you done with your purchase?")
-elif "yes":
-    input("Someone's a lil' stingy...but thank you I guess")
-elif "no": 
-    input("GOOD whatchu want?")
-    cart.append(purchase)
-    money = float(input("Give cost"))
-    prices.append(money)
-print(cart, prices)
-total = sum(prices)
+elif 'yes':
+    input("Thank you for your purchase")
+    print(cart, prices)
+    total = sum(prices)
+elif 'no':
+    purchase != 'done'
 
 print(cart, total)
 
