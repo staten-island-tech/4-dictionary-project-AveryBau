@@ -59,7 +59,7 @@ print(cart)
 total += grocery_store[purchase]["price"]
 
 while True:
-    checkout = input("Do you wish to continue shopping? (yes or no)")
+    checkout = input("Do you wish to continue shopping? (type yes or no)")
     if checkout =="yes":
         purchase = int(input("What else would you like to buy?"))
         cart.append(grocery_store[purchase])
@@ -67,8 +67,6 @@ while True:
         total += grocery_store[purchase]["price"]
     elif checkout == "no":
         break
-    """ else:
-        print("say yes/no") """
 for item in cart:
     print(f"{(item["name"])}, ${float(item["price"])}")
 print(f"Total: ${total}")
